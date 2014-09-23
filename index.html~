@@ -17,8 +17,8 @@
 </div>
 <script>
 	function capturePhoto(){
-		navigator.camera.getPicture( measureCameraInput, null, { sourceType:1 ,quality:60 } );
 		$( '#output' ).html( $( '#output' ).html() + "\n" + 'Capturing photo' );
+		navigator.camera.getPicture( measureCameraInput, null, { sourceType:1 ,quality:60 } );
 	}
 	
 	function captureCameraInput( data ) {
